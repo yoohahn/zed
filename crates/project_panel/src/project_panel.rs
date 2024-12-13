@@ -3419,7 +3419,7 @@ impl ProjectPanel {
                                 .into_any_element(),
                             )
                         } else {
-                            h_flex().child(Icon::from_path(icon.to_string()).color(Color::Muted))
+                            h_flex().child(Icon::from_path(icon.to_string()).color(Color::Default))
                         }
                     } else {
                         if let Some((icon_name, color)) =

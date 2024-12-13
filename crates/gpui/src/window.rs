@@ -2562,8 +2562,8 @@ impl<'a> WindowContext<'a> {
         &mut self,
         bounds: Bounds<Pixels>,
         path: SharedString,
-        transformation: TransformationMatrix,
-        color: Hsla,
+        _transformation: TransformationMatrix,
+        _color: Hsla,
     ) -> Result<()> {
         debug_assert_eq!(
             self.window.draw_phase,
@@ -2596,19 +2596,22 @@ impl<'a> WindowContext<'a> {
         };
         let content_mask = self.content_mask().scale(scale_factor);
 
+        let sized_bounds = bounds
+            .map_origin(|origin| origin.floor())
+            .map_size(|size| size.ceil());
+
         self.window
             .next_frame
             .scene
-            .insert_primitive(MonochromeSprite {
+            .insert_primitive(PolychromeSprite {
                 order: 0,
                 pad: 0,
-                bounds: bounds
-                    .map_origin(|origin| origin.floor())
-                    .map_size(|size| size.ceil()),
+                grayscale: false, // This ensures colors from SVG are preserved
+                bounds: sized_bounds,
                 content_mask,
-                color: color.opacity(element_opacity),
+                corner_radii: Default::default(),
                 tile,
-                transformation,
+                opacity: element_opacity,
             });
 
         Ok(())

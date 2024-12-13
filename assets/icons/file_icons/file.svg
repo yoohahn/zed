@@ -1,5 +1,1 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 5H11" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M3 8H13" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M3 11H9" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32"><title>default_file</title><path d="M20.414,2H5V30H27V8.586ZM7,28V4H19v6h6V28Z" style="fill:#c5c5c5"/></svg>

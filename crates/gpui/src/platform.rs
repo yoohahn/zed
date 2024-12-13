@@ -558,7 +558,8 @@ impl AtlasKey {
                     AtlasTextureKind::Monochrome
                 }
             }
-            AtlasKey::Svg(_) => AtlasTextureKind::Monochrome,
+            // Treat svg as always polychrome
+            AtlasKey::Svg(_) => AtlasTextureKind::Polychrome,
             AtlasKey::Image(_) => AtlasTextureKind::Polychrome,
         }
     }

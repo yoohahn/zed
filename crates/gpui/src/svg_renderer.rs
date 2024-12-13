@@ -36,13 +36,15 @@ impl SvgRenderer {
 
         let pixmap = self.render_pixmap(&bytes, SvgSize::Size(params.size))?;
 
-        // Convert the pixmap's pixels into an alpha mask.
-        let alpha_mask = pixmap
+        let result: Vec<u8> = pixmap
             .pixels()
             .iter()
-            .map(|p| p.alpha())
-            .collect::<Vec<_>>();
-        Ok(Some(alpha_mask))
+            .flat_map(|pixel| {
+                let pixel = pixel.demultiply();
+                vec![pixel.blue(), pixel.green(), pixel.red(), pixel.alpha()]
+            })
+            .collect();
+        Ok(Some(result))
     }
 
     pub fn render_pixmap(&self, bytes: &[u8], size: SvgSize) -> Result<Pixmap, usvg::Error> {

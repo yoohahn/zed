@@ -5,6 +5,7 @@
     "Procfile": "heroku"
   },
   "suffixes": {
+    "7z": "zip",
     "Emakefile": "erlang",
     "aac": "audio",
     "accdb": "storage",
@@ -20,6 +21,7 @@
     "bashrc": "terminal",
     "bmp": "image",
     "c": "c",
+    "cmd": "bat",
     "c++": "cpp",
     "cc": "cpp",
     "cjs": "javascript",
@@ -27,6 +29,7 @@
     "conf": "settings",
     "cpp": "cpp",
     "css": "css",
+    "css.ts": "css",
     "csv": "storage",
     "cxx": "cpp",
     "cts": "typescript",
@@ -37,9 +40,12 @@
     "diff": "diff",
     "dll": "storage",
     "doc": "document",
+    "dockerignore": "docker",
     "docx": "document",
+    "editorconfig": "editorconfig",
     "eex": "elixir",
     "elm": "elm",
+    "env": "settings",
     "erl": "erlang",
     "escript": "erlang",
     "eslintrc": "eslint",
@@ -56,6 +62,7 @@
     "gdb": "storage",
     "gif": "image",
     "gitattributes": "vcs",
+    "gitconfig": "vcs",
     "gitignore": "vcs",
     "gitkeep": "vcs",
     "gitmodules": "vcs",
@@ -95,7 +102,7 @@
     "jpeg": "image",
     "jpg": "image",
     "js": "javascript",
-    "json": "storage",
+    "json": "json",
     "jsonc": "storage",
     "jsx": "react",
     "jxl": "image",
@@ -107,11 +114,11 @@
     "lua": "lua",
     "m4a": "audio",
     "m4v": "video",
-    "markdown": "document",
-    "md": "document",
+    "markdown": "markdown",
+    "md": "markdown",
     "mdb": "storage",
     "mdf": "storage",
-    "mdx": "document",
+    "mdx": "mdx",
     "metadata": "code",
     "metal": "metal",
     "mjs": "javascript",
@@ -129,6 +136,7 @@
     "nim": "nim",
     "nix": "nix",
     "nu": "terminal",
+    "nvmrc": "settings",
     "odp": "document",
     "ods": "document",
     "odt": "document",
@@ -167,10 +175,11 @@
     "scss": "sass",
     "sdf": "storage",
     "sh": "terminal",
+    "sln": "sln",
     "sql": "storage",
     "sqlite": "storage",
     "svelte": "template",
-    "svg": "image",
+    "svg": "svg",
     "swift": "swift",
     "tcl": "tcl",
     "tf": "terraform",
@@ -199,10 +208,15 @@
     "xlsx": "document",
     "xml": "template",
     "xrl": "erlang",
-    "yaml": "settings",
-    "yml": "settings",
+    "yaml": "yaml",
+    "yarnrc": "yarn",
+    "yarnrc.yml": "yarn",
+    "yml": "yaml",
     "yrl": "erlang",
     "zig": "zig",
+    "zip": "zip",
+    "tar": "zip",
+    "rar": "zip",
     "zlogin": "terminal",
     "zsh": "terminal",
     "zsh_aliases": "terminal",
@@ -217,6 +231,9 @@
     },
     "audio": {
       "icon": "icons/file_icons/audio.svg"
+    },
+    "bat": {
+      "icon": "icons/file_icons/terminal.svg"
     },
     "bun": {
       "icon": "icons/file_icons/bun.svg"
@@ -256,6 +273,9 @@
     },
     "document": {
       "icon": "icons/file_icons/book.svg"
+    },
+    "editorconfig": {
+      "icon": "icons/file_icons/editorconfig.svg"
     },
     "elixir": {
       "icon": "icons/file_icons/elixir.svg"
@@ -308,6 +328,9 @@
     "javascript": {
       "icon": "icons/file_icons/javascript.svg"
     },
+    "json": {
+      "icon": "icons/file_icons/json.svg"
+    },
     "julia": {
       "icon": "icons/file_icons/julia.svg"
     },
@@ -325,6 +348,12 @@
     },
     "metal": {
       "icon": "icons/file_icons/metal.svg"
+    },
+    "markdown": {
+      "icon": "icons/file_icons/markdown.svg"
+    },
+    "mdx": {
+      "icon": "icons/file_icons/mdx.svg"
     },
     "nim": {
       "icon": "icons/file_icons/nim.svg"
@@ -374,8 +403,14 @@
     "settings": {
       "icon": "icons/file_icons/settings.svg"
     },
+    "sln": {
+      "icon": "icons/file_icons/sln.svg"
+    },
     "storage": {
       "icon": "icons/file_icons/database.svg"
+    },
+    "svg": {
+      "icon": "icons/file_icons/svg.svg"
     },
     "swift": {
       "icon": "icons/file_icons/swift.svg"
@@ -410,8 +445,17 @@
     "vue": {
       "icon": "icons/file_icons/vue.svg"
     },
+    "yaml": {
+      "icon": "icons/file_icons/yaml.svg"
+    },
+    "yarn": {
+      "icon": "icons/file_icons/yarn.svg"
+    },
     "zig": {
       "icon": "icons/file_icons/zig.svg"
+    },
+    "zip": {
+      "icon": "icons/file_icons/zip.svg"
     }
   }
 }
